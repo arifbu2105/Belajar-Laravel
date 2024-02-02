@@ -1,0 +1,53 @@
+D:\>cd xampp/htdocs/kasir
+
+D:\xampp\htdocs\kasir>php artisan make:migration Barang
+
+   INFO  Migration [D:\xampp\htdocs\kasir\database\migrations/2024_01_30_122353_barang.php] created successfully.
+
+
+D:\xampp\htdocs\kasir>php artisan make:migration JenisBarang
+
+   INFO  Migration [D:\xampp\htdocs\kasir\database\migrations/2024_01_30_122450_jenis_barang.php] created successfully. 
+
+
+D:\xampp\htdocs\kasir>php artisan make:migration Transaksi
+
+   INFO  Migration [D:\xampp\htdocs\kasir\database\migrations/2024_01_30_122605_transaksi.php] created successfully.
+
+
+D:\xampp\htdocs\kasir>php artisan make:migration DetailTransaksi
+
+   INFO  Migration [D:\xampp\htdocs\kasir\database\migrations/2024_01_30_122627_detail_transaksi.php] created successfully.
+
+
+D:\xampp\htdocs\kasir>php artisan make:migration diskon
+
+   INFO  Migration [D:\xampp\htdocs\kasir\database\migrations/2024_01_30_135142_diskon.php] created successfully.
+
+D:\xampp\htdocs\kasir>php artisan make:seeder UserSeeder
+
+   INFO  Seeder [D:\xampp\htdocs\kasir\database\seeders\UserSeeder.php] created successfully.
+
+D:\xampp\htdocs\kasir>php artisan migrate
+
+   INFO  Preparing database.
+
+  Creating migration table ................................................................................. 19ms DONE
+
+   INFO  Running migrations.
+
+  2014_10_12_000000_create_users_table ..................................................................... 25ms DONE
+  2019_12_14_000001_create_personal_access_tokens_table .................................................... 27ms DONE
+  2024_01_30_122353_barang .................................................................................. 8ms DONE
+  2024_01_30_122450_jenis_barang ............................................................................ 8ms DONE
+  2024_01_30_122605_transaksi ............................................................................... 9ms DONE
+  2024_01_30_122627_detail_transaksi ....................................................................... 10ms DONE
+  2024_01_30_135142_diskon ................................................................................. 10ms DONE
+
+
+D:\xampp\htdocs\kasir>php artisan db:seed UserSeeder
+
+   INFO  Seeding database.
+
+
+D:\xampp\htdocs\kasir>
